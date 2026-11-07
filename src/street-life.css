@@ -1,0 +1,7 @@
+.map-motion-toggle{position:absolute;right:21px;top:81px;z-index:2;display:flex;align-items:center;gap:6px;min-height:30px;padding:5px 9px;border:1px solid #b5a786;border-radius:8px;background:#fff9e9dd;color:#8e795c;font-size:9px;box-shadow:1px 2px 0 #6a514615;backdrop-filter:blur(5px)}
+.map-motion-toggle:hover{background:#f6e6c9}.map-motion-toggle svg{width:12px;height:12px}.street-life{pointer-events:none}.walker-left-leg{transform-origin:-2px -6px;animation:walking-left .65s ease-in-out infinite}.walker-right-leg{transform-origin:2px -6px;animation:walking-right .65s ease-in-out infinite}.walker-left-arm{transform-origin:-4px -13px;animation:walking-right .65s ease-in-out infinite}.walker-right-arm{transform-origin:4px -13px;animation:walking-left .65s ease-in-out infinite}.walker-body{animation:walking-bob .65s ease-in-out infinite}.person-1 *{animation-delay:-.2s}.person-2 *{animation-delay:-.4s}.person-3 *{animation-delay:-.1s}.street-life-paused *{animation-play-state:paused!important}
+@keyframes walking-left{0%,100%{transform:rotate(-18deg)}50%{transform:rotate(18deg)}}
+@keyframes walking-right{0%,100%{transform:rotate(18deg)}50%{transform:rotate(-18deg)}}
+@keyframes walking-bob{0%,50%,100%{transform:translateY(0)}25%,75%{transform:translateY(-.6px)}}
+@media(max-width:600px){.map-motion-toggle{right:15px;top:77px;min-height:27px;font-size:8px;padding:4px 7px;gap:5px}.map-motion-toggle svg{width:11px;height:11px}}
+@media(prefers-reduced-motion:reduce){.street-life *{animation:none!important}}

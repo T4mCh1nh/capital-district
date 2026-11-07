@@ -34,10 +34,13 @@ Trong Settings → Pages, chọn GitHub Actions. Mỗi lần đẩy lên nhánh 
 
 Ván chơi tự lưu trong localStorage (`capital-save`); bảng thành tích trong `capital-scores`. Dữ liệu nằm trên trình duyệt, không đồng bộ thiết bị. Bảng xếp hạng hiện là cục bộ, chưa có máy chủ chung/chống gian lận.
 
+Bản đồ có người đi bộ, khách ghé cửa hàng, xe con và xe giao hàng dừng rồi rời đi. Đây là chuyển động trang trí, không làm thay đổi đồng hồ hoặc kết quả kinh doanh. Nút trên bản đồ bật/tạm dừng chuyển động; hiệu ứng tự dừng khi ẩn trang và mặc định dừng nếu thiết bị yêu cầu giảm chuyển động.
+
 ## Mã nguồn
 
 - `src/App.tsx`: giao diện và tương tác.
 - `src/styles.css`: giao diện đáp ứng.
 - `lib/game.ts`: mô phỏng kinh tế.
 - `components/city-map.tsx`: bản đồ SVG tương tác.
+- `components/street-life.tsx`: nhân vật, xe cộ, tuyến di chuyển và điều khiển chuyển động.
 - `tests/game.test.mjs`: kiểm thử 60 tháng và các điều kiện kết thúc.
